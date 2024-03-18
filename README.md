@@ -1,2 +1,3 @@
-# myPortfolio
+# myPortfolio - React
+
 My Personal Portfolio
