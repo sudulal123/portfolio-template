@@ -39,7 +39,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /* Margenes Bottom */
+    /* Margin Bottom */
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -146,13 +146,13 @@ img {
 }
 
 .header {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--body-color);
-}
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+  }
 
 /* NAV */
 
