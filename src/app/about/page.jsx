@@ -11,10 +11,10 @@ const AboutPage = () => {
             transition={{duration:1}}
         >
             {/*AREA*/}
-            <div className="">
+            <div className="h-full overflow-scroll lg:flex">
                 
                 {/*TEXT AREA*/}
-                <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
+                <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
                     
                     {/*BIO AREA*/}
                     <div className="flex flex-col gap-12 justify-center">
@@ -105,14 +105,125 @@ const AboutPage = () => {
                     </div>
                     
                     {/*TIMELINE AREA*/}
-                    <div className="">TIMELINE</div>
-                </div>
-                
-                {/*SVG AREA*/}
-                <div className="hidden">
+                    <div className="flex flex-col gap-12 justify-center pb-48">
+                        <h1 className="font-bold text-2xl">TIMELINE</h1>
 
+                        {/*TIMELINE LIST*/}
+                        <div className="">
+                            {/*TIMELINE LIST ITEM*/}
+                            <div className="flex justify-between h-48">
+                                
+                                {/*LEFT*/}
+                                <div className="w-1/3">
+                                    {/*JOB TITLE*/}
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                        Apprenticeship - Software 
+                                    </div>
+                                    {/*JOB DESCRIPTION*/}
+                                    <div className="p-3 text-sm italic">
+                                        Beep Boop Beep Boop Beep Boop
+                                    </div>
+                                    {/*JOB PERIOD*/}
+                                    <div className="p3 text-red-400 text-sm font-semibold"> 
+                                        2020 - 2024
+                                    </div>
+                                    {/*JOB COMPANY*/}
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fixed">
+                                        4K Analytics GmbH, Leipzig
+                                    </div>
+                                </div>
+                                
+                                {/*CENTER*/}
+                                <div className="w-1/6 flex justify-center">
+                                    {/*LINE*/}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/*CIRCLE*/}
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                                    </div>
+                                </div>
+                                
+                                {/*RIGHT*/}
+                                <div className="w-1/3"></div>
+                            </div>
+                            {/*TIMELINE LIST ITEM*/}
+                            <div className="flex justify-between h-48">
+                                
+                                {/*LEFT*/}
+                                <div className="w-1/3"></div>
+                                
+                                {/*CENTER*/}
+                                <div className="w-1/6 flex justify-center">
+                                    {/*LINE*/}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/*CIRCLE*/}
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                                    </div>
+                                </div>
+                                
+                                {/*RIGHT*/}
+                                <div className="w-1/3">
+                                    {/*JOB TITLE*/}
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                        Apprenticeship - Software 
+                                    </div>
+                                    {/*JOB DESCRIPTION*/}
+                                    <div className="p-3 text-sm italic">
+                                        Beep Boop Beep Boop Beep Boop
+                                    </div>
+                                    {/*JOB PERIOD*/}
+                                    <div className="p3 text-red-400 text-sm font-semibold"> 
+                                        2020 - 2024
+                                    </div>
+                                    {/*JOB COMPANY*/}
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fixed">
+                                        4K Analytics GmbH, Leipzig
+                                    </div>
+                                </div>
+                            </div>
+                            {/*TIMELINE LIST ITEM*/}
+                            <div className="flex justify-between h-48">
+                             
+                                {/*LEFT*/}
+                                <div className="w-1/3">
+                                    {/*JOB TITLE*/}
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                        Apprenticeship - Software 
+                                    </div>
+                                    {/*JOB DESCRIPTION*/}
+                                    <div className="p-3 text-sm italic">
+                                        Beep Boop Beep Boop Beep Boop
+                                    </div>
+                                    {/*JOB PERIOD*/}
+                                    <div className="p3 text-red-400 text-sm font-semibold"> 
+                                        2020 - 2024
+                                    </div>
+                                    {/*JOB COMPANY*/}
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fixed">
+                                        4K Analytics GmbH, Leipzig
+                                    </div>
+                                </div>
+                                
+                                {/*CENTER*/}
+                                <div className="w-1/6 flex justify-center">
+                                    {/*LINE*/}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/*CIRCLE*/}
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                                    </div>
+                                </div>
+                                
+                                {/*RIGHT*/}
+                                <div className="w-1/3"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+                
+                {/*SVG AREA*/}
+                <div className="hidden lg:block w-1/3 xl:1/2">
+
+                </div>
         </motion.div>
     )
 }
