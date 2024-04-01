@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {motion} from "framer-motion";
 
@@ -13,6 +13,6 @@ const ContactPage = () => {
             Contact
         </motion.div>
     )
-}
+};
 
 export default ContactPage;

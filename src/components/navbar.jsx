@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -143,7 +143,7 @@ const Navbar = () => {
                 )}
             </div>
         </div>
-    );
+    )
 };
 
 export default Navbar;
