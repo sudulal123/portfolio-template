@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {motion} from "framer-motion";
 
@@ -13,6 +13,6 @@ const PortfolioPage = () => {
             Portfolio
         </motion.div>
     )
-}
+};
 
 export default PortfolioPage;

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
@@ -39,6 +39,6 @@ const PageTransition = ({children}) => {
         </div>
      </AnimatePresence>
     )
-}
+};
 
 export default PageTransition;
