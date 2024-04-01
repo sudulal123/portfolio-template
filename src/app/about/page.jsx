@@ -1,8 +1,14 @@
 "use client"
 
-import {motion} from "framer-motion";
+import {useRef} from "react";
+import Mechanic from "@/components/mechanic";
+import { motion, useScroll } from "framer-motion";
 
 const AboutPage = () => {
+    const containerRef = useRef();
+
+    const {scrollYProgress} = useScroll ({ container:containerRef });
+
     return (
         <motion.div 
             className="h-full" 
@@ -11,7 +17,7 @@ const AboutPage = () => {
             transition={{duration:1}}
         >
             {/*AREA*/}
-            <div className="h-full overflow-scroll lg:flex">
+            <div className="h-full overflow-scroll lg:flex ref={containerRef}">
                 
                 {/*TEXT AREA*/}
                 <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
@@ -218,12 +224,12 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-                
-                {/*SVG AREA*/}
-                <div className="hidden lg:block w-1/3 xl:1/2">
 
+                {/*SVG AREA*/}
+                <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+                    <Mechanic scrollYProgress={scrollYProgress}/>
                 </div>
+            </div>
         </motion.div>
     )
 }
