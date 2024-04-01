@@ -227,8 +227,8 @@ const AboutPage = () => {
                 </div>
 
                 {/*SVG AREA*/}
-                <div className="hidden lg:block w-2/3 top-0 z-30 xl:w-1/2">
-                    <Bigguy fontSize={(100)} scrollYProgress={scrollYProgress}/>
+                <div className="hidden lg:block w-2/3 sticky top-0 z-30 xl:w-1/2">
+                    <Bigguy/>
                 </div>
             </div>
         </motion.div>
