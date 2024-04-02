@@ -456,9 +456,6 @@ const BigGuy = ({scrollYProgress}) => {
 		</div>
 		
 		<div className="w-full h-1/2">
-			<svg>
-
-			</svg>
 
 		</div>
 	</div>
