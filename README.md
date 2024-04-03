@@ -1,5 +1,5 @@
 # Portfolio
-Personal Portfolio with HTML, CSS and Next.js
+Personal Portfolio made with Next.js and Framer Motion
 
 ## Getting Started
 
