@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const BigGuy = ({scrollYProgress}) => {	
+const SideAnimations = ({scrollYProgress}) => {	
   return (
 	<div className="w-full h-full">
 		{/*Guy with computer +  window with Dark/Light trigger by scroll*/}
@@ -463,4 +463,4 @@ const BigGuy = ({scrollYProgress}) => {
  );
 };
 
-export default BigGuy;
+export default SideAnimations;
