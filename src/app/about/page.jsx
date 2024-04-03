@@ -1,9 +1,8 @@
 "use client";
 
 import {useRef} from "react";
-import Image from "next/image";
-import Bigguy from "@/components/bigguy";
 import { motion, useScroll } from "framer-motion";
+import SideAnimation from "@/components/sideAnimation";
 
 const AboutPage = () => {
     const containerRef = useRef();
@@ -228,7 +227,7 @@ const AboutPage = () => {
 
                 {/*SVG AREA*/}
                 <div className="hidden lg:block w-2/3 sticky top-0 z-30 xl:w-1/2">
-                    <Bigguy scrollYProgress={scrollYProgress}/>
+                    <SideAnimation scrollYProgress={scrollYProgress}/>
                 </div>
             </div>
         </motion.div>
