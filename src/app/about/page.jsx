@@ -7,7 +7,7 @@ import SideAnimations from "@/components/sideAnimations";
 const AboutPage = () => {
     const containerRef = useRef();
 
-    const {scrollYProgress} = useScroll ({ container:containerRef });
+    const {scrollYProgress} = useScroll ({container:containerRef});
 
     return (
         <motion.div 
