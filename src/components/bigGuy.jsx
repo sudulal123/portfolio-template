@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const BigGuy = ({scrollYProgress}) => {	
   return (
 	<div className="w-full h-full">
+		{/*Guy with computer +  window with Dark/Light trigger by scroll*/}
 		<div className="w-full h-1/2">
 			<svg width="100%" height="100%">
         		<g className="p-right">
@@ -454,7 +455,7 @@ const BigGuy = ({scrollYProgress}) => {
         		</g>
       		</svg>
 		</div>
-		
+		{/*Rotatable Globe trigger by scroll */}
 		<div className="w-full h-1/2">
 
 		</div>
