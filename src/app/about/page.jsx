@@ -5,9 +5,6 @@ import { motion, useScroll } from "framer-motion";
 import SideAnimations from "@/components/sideAnimations";
 
 const AboutPage = () => {
-    const containerRef = useRef();
-
-    const {scrollYProgress} = useScroll ({container:containerRef});
 
     return (
         <motion.div 
@@ -227,7 +224,7 @@ const AboutPage = () => {
 
                 {/*SVG AREA*/}
                 <div className="hidden lg:block w-2/3 sticky top-0 z-30 xl:w-1/2">
-                    <SideAnimations scrollYProgress={scrollYProgress}/>
+                    <SideAnimations/>
                 </div>
             </div>
         </motion.div>
