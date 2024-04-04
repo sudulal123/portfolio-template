@@ -1,10 +1,17 @@
 "use client";
 
 import {useRef} from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useInView, useScroll } from "framer-motion";
 import SideAnimations from "@/components/sideAnimations";
 
 const AboutPage = () => {
+    
+    const containerRef = useRef();
+
+    const { scrollYProgress } = useScroll({ container: containerRef });
+
+    const skillRef = useRef();
+    const isSkillRefInView = useInView (skillRef)
 
     return (
         <motion.div 
@@ -14,7 +21,7 @@ const AboutPage = () => {
             transition={{duration:1}}
         >
             {/*AREA*/}
-            <div className="h-full overflow-scroll lg:flex ref={containerRef}">
+            <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
                 
                 {/*TEXT AREA*/}
                 <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
@@ -48,8 +55,15 @@ const AboutPage = () => {
                     </svg>
                 
                     {/*SKILLS AREA*/}
-                    <div className="flex flex-col gap-12 justify-center">
-                        <h1 className="font-bold text-2xl">SKILLS</h1>
+                    <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+                        <motion.h1 
+                            initial={{x:"-300px"}} 
+                            animate={isSkillRefInView ? {x:0} : {}} 
+                            transition={{delay:0.2}} 
+                            className="font-bold text-2xl"
+                        >
+                            SKILLS
+                        </motion.h1>
                         
                         {/*SKILLS LIST*/}
                         <div className="flex gap-4 flex-wrap">
@@ -224,7 +238,7 @@ const AboutPage = () => {
 
                 {/*SVG AREA*/}
                 <div className="hidden lg:block w-2/3 sticky top-0 z-30 xl:w-1/2">
-                    <SideAnimations/>
+                    <SideAnimations scrollYProgress={scrollYProgress}/>
                 </div>
             </div>
         </motion.div>
