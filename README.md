@@ -12,4 +12,3 @@ pnpm dev
 # or
 bun dev
 ```
-TBD
