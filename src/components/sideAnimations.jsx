@@ -469,7 +469,7 @@ const SideAnimations = ({scrollYProgress}) => {
       		</svg>
 		</div>
 		
-        {/*Earth: floating and Moon: Opacity trigger by scroll */}
+        {/*Earth: floating & Moon: Opacity trigger by scroll */}
 		<div className="w-full h-1/2">
 			<svg width="100%" height="100%">
 				<g transform="translate(90 15)">
