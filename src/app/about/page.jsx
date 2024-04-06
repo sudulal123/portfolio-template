@@ -1,8 +1,8 @@
 "use client";
 
 import {useRef} from "react";
-import { motion, useInView, useScroll } from "framer-motion";
 import SideAnimations from "@/components/sideAnimations";
+import { motion, useInView, useScroll } from "framer-motion";
 
 const AboutPage = () => {
     
@@ -11,6 +11,7 @@ const AboutPage = () => {
     const { scrollYProgress } = useScroll({ container: containerRef });
 
     const skillRef = useRef();
+
     const isSkillRefInView = useInView (skillRef)
 
     return (
@@ -30,12 +31,12 @@ const AboutPage = () => {
                     <div className="flex flex-col gap-12 justify-center">
                         <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
                         <p className="text-lg">BBBBBBBBwwwwwwwwwwwwkdksdfsgdfgdfg
-                           sdfsdfssdfsdfsdfsdffsddddddsdfsdfs 
+                           sdfsdfssdfsdfsdfsdffsddddddsdfsdfs hjvkvivjihvbjhbkjhbihgbkjbkhgougjhbkjbhoug
+                           iviuiubiuihbjbbjb
                         </p>
                         <span className="italic">
                             lol lol lol lol lol lol 
                         </span>
-                    </div>
                     {/*BIO SCROLL SVG*/}
                     <svg
                         viewBox="0 0 24 24"
@@ -53,6 +54,7 @@ const AboutPage = () => {
                             d="M15 11L12 14L9 11" stroke="#000000" strokeWidth="1"
                         ></path>
                     </svg>
+                    </div>
                 
                     {/*SKILLS AREA*/}
                     <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
