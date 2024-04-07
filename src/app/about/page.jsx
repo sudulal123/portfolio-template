@@ -12,7 +12,11 @@ const AboutPage = () => {
 
     const skillRef = useRef();
 
-    const isSkillRefInView = useInView (skillRef)
+    const isSkillRefInView = useInView (skillRef, {margin:"-100px"}, {once: true})
+
+    const timelineRef = useRef();
+
+    const isTimelineRefInView = useInView (timelineRef, {margin:"-100px"}, {once: true})
 
     return (
         <motion.div 
@@ -29,35 +33,45 @@ const AboutPage = () => {
                     
                     {/*BIO AREA*/}
                     <div className="flex flex-col gap-12 justify-center">
+                        
+                        {/*BIO TITLE*/}
                         <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
-                        <p className="text-lg">BBBBBBBBwwwwwwwwwwwwkdksdfsgdfgdfg
-                           sdfsdfssdfsdfsdfsdffsddddddsdfsdfs hjvkvivjihvbjhbkjhbihgbkjbkhgougjhbkjbhoug
-                           iviuiubiuihbjbbjb
+                        
+                        {/*BIO DESCRIPTION*/}
+                        <p className="text-lg">
+                            BBBBBBBBwwwwwwwwwwwwkdksdfsgdfgdfg
+                            sdfsdfssdfsdfsdfsdffsddddddsdfsdfs hjvkvivjihvbjhbkjhbihgbkjbkhgougjhbkjbhoug
+                            iviuiubiuihbjbbjb
                         </p>
+                        
+                        {/*BIO QUOTE*/}
                         <span className="italic">
                             lol lol lol lol lol lol 
                         </span>
+                    
                     {/*BIO SCROLL SVG*/}
-                    <svg
+                    <motion.svg
+                        initial={{ opacity: 0.2, y: 0 }}
+                        animate={{ opacity: 1, y: "10px" }}
+                        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         width={50}
                         height={50}
+                        strokeWidth="1"
+                        stroke="#000000"
                     >
-                        <path
-                            d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                            stroke="#000000" strokeWidth="1"
-                        ></path>
-                        <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
-                        <path
-                            d="M15 11L12 14L9 11" stroke="#000000" strokeWidth="1"
-                        ></path>
-                    </svg>
+                        <path d="M12 6V14"/>
+                        <path d="M15 11L12 14L9 11"/>
+                        <path d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"/>
+                    </motion.svg>
                     </div>
                 
                     {/*SKILLS AREA*/}
                     <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+
+                        {/*SKILLS TITLE*/}
                         <motion.h1 
                             initial={{x:"-300px"}} 
                             animate={isSkillRefInView ? {x:0} : {}} 
@@ -68,7 +82,11 @@ const AboutPage = () => {
                         </motion.h1>
                         
                         {/*SKILLS LIST*/}
-                        <div className="flex gap-4 flex-wrap">
+                        <motion.div 
+                            initial={{x:"-300px"}} 
+                            className="flex gap-4 flex-wrap"
+                            animate={isSkillRefInView ? {x:0} : {}} 
+                        >
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Java
                             </div>
@@ -102,33 +120,46 @@ const AboutPage = () => {
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Framer Motion
                             </div>
-                        </div>
+                        </motion.div>
                         
                         {/*SKILLS SCROLL SVG*/}
-                        <svg
+                        <motion.svg
+                            initial={{ opacity: 0.2, y: 0 }}
+                            animate={{ opacity: 1, y: "10px" }}
+                            transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                             viewBox="0 0 24 24"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             width={50}
                             height={50}
+                            strokeWidth="1"
+                            stroke="#000000"
                         >
-                        <path
-                            d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                            stroke="#000000" strokeWidth="1"
-                        ></path>
-                        <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
-                        <path
-                            d="M15 11L12 14L9 11" stroke="#000000" strokeWidth="1"
-                        ></path>
-                    </svg>
+                        <path d="M12 6V14"/>
+                        <path d="M15 11L12 14L9 11"/>
+                        <path d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"/>
+                    </motion.svg>
                     </div>
                     
                     {/*TIMELINE AREA*/}
-                    <div className="flex flex-col gap-12 justify-center pb-48">
-                        <h1 className="font-bold text-2xl">TIMELINE</h1>
+                    <div className="flex flex-col gap-12 justify-center pb-48" ref={timelineRef}>
+
+                        {/*TIMELINE TITLE*/}
+                        <motion.h1 
+                            initial={{x:"-300px"}} 
+                            animate={isTimelineRefInView ? {x:0} : {}}
+                            transition={{ delay: 0.2 }}
+                            className="font-bold text-2xl"
+                        >
+                            TIMELINE
+                        </motion.h1>
 
                         {/*TIMELINE LIST*/}
-                        <div className="">
+                        <motion.div 
+                            initial={{x:"-300px"}} 
+                            animate={isTimelineRefInView ? {x:0} : {}}
+                            className="">
+                            
                             {/*TIMELINE LIST ITEM*/}
                             <div className="flex justify-between h-48">
                                 
@@ -234,7 +265,7 @@ const AboutPage = () => {
                                 {/*RIGHT*/}
                                 <div className="w-1/3"></div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
