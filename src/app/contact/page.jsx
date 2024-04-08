@@ -1,13 +1,39 @@
 "use client";
 
 import {motion} from "framer-motion";
-import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from "react";
 
 const ContactPage = () => {
 
-    const[error, setError] = useState(false)
-    const[success, setSuccess] = useState(false)
-    const text = "Hello there!"
+        const text = "Hello there!";
+        const[error, setError] = useState(false);
+        const[success, setSuccess] = useState(false);
+
+        const form = useRef();
+
+        const sendEmail = (e) => {
+            e.preventDefault();
+            setError(false);
+            setSuccess(false);
+
+        emailjs
+        .sendForm(
+            process.env.NEXT_PUBLIC_SERVICE_ID, 
+            process.env.NEXT_PUBLIC_TEMPLATE_ID, 
+            form.current,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY
+        )
+        .then(
+            () => {
+            setSuccess(true);
+            form.current.reset();
+            },
+            () => {
+            setError(true);
+            }
+        );
+    };
 
     return (
         <motion.div 
@@ -39,15 +65,36 @@ const ContactPage = () => {
                     </div>
                 </div>
                 {/*FORM AREA*/}
-                <form className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
+                <form 
+                    onSubmit={sendEmail}
+                    ref={form}
+                    className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+                >
                     <span>Dear Sushil Dulal,</span>
-                    <textarea rows={6} className="bg-transparent border-b-2 border-b-black outline-none resize-none"/>
-                    <span>My mail address is:</span>
-                    <input type="text" className="bg-transparent border-b-2 border-b-black outline-none"/>
-                    <span>Regards</span>
-                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">Send</button>
-                    {error && <span className="text-red-600 font-semibold">Something went wrong!</span>}
-                    {success && <span className="text-green-600 font-semibold">Your message has been sent successfully!</span>}
+                    <textarea 
+                        rows={6}  
+                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        name="user_message"
+                        />
+                    <span>Email address:</span>
+                    <input 
+                        name="user_email"
+                        type="text" 
+                        className="bg-transparent border-b-2 border-b-black outline-none"/>
+                    <span>Best Regards</span>
+                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+                        Send
+                    </button>
+                        {error && (
+                            <span className="text-red-600 font-semibold">
+                                Oops! Something went wrong!
+                            </span>
+                        )}
+                        {success && ( 
+                            <span className="text-green-600 font-semibold">
+                             Your message has been sent successfully!
+                            </span>
+                        )}
                 </form>
             </div>
         </motion.div>
