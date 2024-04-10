@@ -47,12 +47,26 @@ const Homepage = () => {
           
           {/*BUTTONS*/}
           <div className="flex gap-4 w-full justify-center">
-            <Link href="/portfolio">
-              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
-            </Link>
-            <Link href="/contact">
-              <button className="p-4 rounded-lg ring-1 ring-black">Contact</button>
-            </Link>
+              <Link href="/about">
+                <motion.button 
+                  href="/about"
+                  className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-500 to-zinc-600 text-white"
+                  
+                  whileHover={{ 
+                  scale: [1, 0.5, 1, 0.5, 1], 
+                  rotate: [0, 45, 90, 0, -45,  0],
+                    
+                  }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    times: [0, 0.2, 0.5, 0.8, 1],
+                    repeat: 0,
+                  }}
+                  >
+                    Let's dive in
+                  </motion.button>
+                </Link>
           </div>
         </div>
     </div>
