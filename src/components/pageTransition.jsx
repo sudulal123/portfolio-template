@@ -11,7 +11,7 @@ const PageTransition = ({children}) => {
 
     return (
      <AnimatePresence mode="wait"> 
-        <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100">
+        <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-gray-300 to-sky-100">
             <motion.div 
                 className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
                 animate={{height: "0vh"}}

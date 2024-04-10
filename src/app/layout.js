@@ -5,7 +5,7 @@ import PageTransition from "@/components/pageTransition";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sushil Dulal | Portfolio",
+  title: "Sushil | Portfolio",
   description: "Personal website",
 };
 
