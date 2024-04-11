@@ -477,13 +477,13 @@ const SideAnimations = ({scrollYProgress}) => {
   						<g id="earth">
 							<motion.path 
 								id="svg_1" 
-								fill="darkgreen" 
+								fill="#bbf7d0" 
 								animate={{y:[0, 23, 0]}}
 								transition={{duration:10, repeat: Infinity,}}
 								d="m171.87,232.57c-22,62 142.28,18.54 142.14,63.27c25.86,-29.91 41.5,-68.9 41.5,-111.54c0,-51.07 -22.44,-96.91 -58,-128.18l-0.01,0c0,0 -109.63,3.45 -109.63,51.45s146,10 134,58s-128,5 -150,67z"/>
 							<motion.path 
 								id="svg_2" 
-								fill="darkgreen"
+								fill="#bbf7d0"
 								animate={{y:[0, 23, 0]}}
 								transition={{duration:10, repeat: Infinity,}}
 								d="m99.87,271.57c24,-90 -70,-82 -68,-115s70,1 77,-39s-46.75,-51.78 -46.75,-51.78l-0.01,-0.01c-29.64,30.69 -47.88,72.48 -47.88,118.52c0,51.92 23.19,98.42 59.78,129.72c11.92,-11.05 21.19,-24.95 25.86,-42.45z"/>
