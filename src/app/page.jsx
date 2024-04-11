@@ -48,14 +48,12 @@ const Homepage = () => {
           {/*BUTTONS*/}
           <div className="flex gap-4 w-full justify-center">
               <Link href="/about">
-                <motion.button 
-                  href="/about"
-                  className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-500 to-zinc-600 text-white"
+                <motion.button  
+                  className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
                   
                   whileHover={{ 
                   scale: [1, 0.5, 1, 0.5, 1], 
-                  rotate: [0, 45, 90, 0, -45,  0],
-                    
+                  rotate: [0, 15, 0, -15, 0], 
                   }}
                   transition={{
                     duration: 0.8,
