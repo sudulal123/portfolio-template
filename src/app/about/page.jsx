@@ -86,28 +86,28 @@ const AboutPage = () => {
                             className="flex gap-4 flex-wrap"
                             animate={isSkillRefInView ? {x:0} : {}} 
                         >
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Java
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 JavaScript
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 React.js
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Next.js
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Three.js
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 SCSS
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Tailwind CSS
                             </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Framer Motion
                             </div>
                         </motion.div>
@@ -156,10 +156,10 @@ const AboutPage = () => {
                                 {/*LEFT*/}
                                 <div className="w-1/3">
                                     {/*JOB TITLE*/}
-                                    <div className="bg-white p-3 font-semibold text-lg rounded-b-lg rounded-s-lg">
+                                    <div className="bg-slate-100 p-3 font-semibold text-lg rounded-b-lg rounded-s-lg">
                                         Software Developer - Apprenticeship
                                         {/*JOB COMPANY*/}
-                                        <div className="p-1 rounded bg-white text-xs font-semibold w-fixed">
+                                        <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
                                         4K Analytics GmbH, Leipzig
                                         </div>
                                     </div>
@@ -170,7 +170,7 @@ const AboutPage = () => {
                                         - Development in Java, Angular Framework, TypeScript, HTML5 and CSS.
                                     </div>
                                     {/*JOB PERIOD*/}
-                                    <div className="p3 text-red-400 text-xs font-semibold"> 
+                                    <div className="p3 text-orange-600 text-xs font-semibold"> 
                                         November.2020 - January.2024
                                     </div>
 
@@ -206,10 +206,10 @@ const AboutPage = () => {
                                 {/*RIGHT*/}
                                 <div className="w-1/3">
                                     {/*DEGREE TITLE*/}
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg">
                                         Global Business and Economics - B.Sc.
                                         {/*UNI NAME*/}
-                                        <div className="p-1 rounded bg-white text-xs font-semibold w-fixed">
+                                        <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
                                         Fachhochschule Aachen, Aachen
                                         </div>
                                     </div>
@@ -218,7 +218,7 @@ const AboutPage = () => {
                                         Specialisation: International Business
                                     </div>
                                     {/*JOB PERIOD*/}
-                                    <div className="p3 text-red-400 text-xs font-semibold"> 
+                                    <div className="p3 text-orange-600 text-xs font-semibold"> 
                                         September.2017 - August.2020
                                     </div>
                                 </div>
@@ -229,9 +229,9 @@ const AboutPage = () => {
                                 {/*LEFT*/}
                                 <div className="w-1/3">
                                     {/*JOB TITLE*/}
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg">
                                         Studienkolleg
-                                        <div className="p-1 rounded bg-white text-xs font-semibold w-fixed">
+                                        <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
                                             Fachhochschule Kiel, Kiel
                                         </div>
                                     </div>
@@ -240,7 +240,7 @@ const AboutPage = () => {
                                         Subjects: Maths, Economic, Informatics, English & German
                                     </div>
                                     {/*JOB PERIOD*/}
-                                    <div className="p3 text-red-400 text-xs font-semibold"> 
+                                    <div className="p3 text-orange-600 text-xs font-semibold"> 
                                         August.2014 - July.2015
                                     </div>
                                     {/*JOB COMPANY*/}
