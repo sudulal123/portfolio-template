@@ -40,7 +40,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            I am <b>Sushil</b>, passionate about crafting intuitive user experiences through clean and efficient code and dedicated to continuous learning and eager to contribute creative solutions to web development projects.
+                            I am <b>Sushil</b>, passionate about crafting intuitive user experiences and dedicated to continuous learning and eager to contribute creative solutions to web development projects.
                         </p>
                         
                         {/*BIO QUOTE*/}
@@ -267,8 +267,7 @@ const AboutPage = () => {
                                     className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
                                     
                                     whileHover={{ 
-                                        scale: [1.1, 1],
-                                          
+                                        scale: [1.1, 1],    
                                     }}
                                     transition={{
                                         type: "spring", stiffness: 400, damping: 10 
