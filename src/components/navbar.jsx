@@ -89,13 +89,13 @@ const Navbar = () => {
               
             {/*SOCIAL MEDIA*/}
             <div className="hidden lg:flex xl:w-1/3 xl:justify-center gap-8">
-               <Link href="https://github.com/sdulal123">
+               <Link href="https://github.com/sdulal123" target="_blank">
                <Image src="/github.png" alt="" width={24} height={24}/>
                </Link>
-               <Link href="https://linkedin.com/in/sushildulal123/">
+               <Link href="https://linkedin.com/in/sushildulal123/" target="_blank">
                <Image src="/linkedin.png" alt="" width={24} height={24}/>
                </Link>
-               <Link href="https://instagram.com/sdstudio420/">
+               <Link href="https://instagram.com/sdstudio420/" target="_blank">
                <Image src="/instagram.png" alt="" width={24} height={24}/>
                </Link> 
             </div>        

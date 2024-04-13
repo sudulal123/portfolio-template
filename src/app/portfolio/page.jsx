@@ -10,33 +10,33 @@ const items = [
         id: 1,
         color: "from-slate-400 to-gray-500",
         title: "My Portfolio",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+        desc: "Portfolio built with Next.js, Framer Motion and Tailwind CSS",
+        img:   "/my_portfolio.jpg",
         link: "https://github.com/sdulal123/portfolio",  
     },
     {
         id: 2,
         color: "from-slate-500 to-gray-600",
-        title: "Your Portfolio",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://github.com/sdulal123/portfolio",  
+        title: "TBD Project",
+        desc: "Loading....",
+        img: "https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&lazy=load",
+        link: "https://github.com/sdulal123/",  
     },
     {
         id: 3,
         color: "from-slate-600 to-gray-700",
-        title: "My Portfolio",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://github.com/sdulal123/portfolio",  
+        title: "TBD Project",
+        desc: "Loading....",
+        img: "https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&lazy=load",
+        link: "https://github.com/sdulal123/",  
     },
     {
         id: 4,
         color: "from-slate-700 to-gray-800",
-        title: "My Portfolio",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-        img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://github.com/sdulal123/portfolio",  
+        title: "TBD Project",
+        desc: "Loading...",
+        img: "https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&lazy=load",
+        link: "https://github.com/sdulal123/",  
     }
 ]
 
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
                                     {/*Description*/}
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                                     {/*Link with Button*/}
-                                    <Link href={item.link} className="flex justify-end">
+                                    <Link href={item.link} className="flex justify-end" target="_blank">
                                         < button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">Github</button>
                                     </Link>
                                 </div>
