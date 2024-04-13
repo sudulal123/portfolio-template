@@ -77,7 +77,7 @@ const ContactPage = () => {
                         required
                         name="user_message"
                         className="bg-transparent border-b-2 border-b-black outline-none resize-none"
-                        placeholder="I went to buy some camo pants but couldn’t find any."
+                        placeholder="I went to buy some camo pants but couldn’t find any. 🤣"
                         />
                     <span>Email address:</span>
                     <input 

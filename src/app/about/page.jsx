@@ -2,6 +2,7 @@
 
 import {useRef} from "react";
 import Link from "next/link";
+import Image from "next/image";
 import SideAnimations from "@/components/sideAnimations";
 import { motion, useInView, useScroll } from "framer-motion";
 
@@ -35,12 +36,21 @@ const AboutPage = () => {
                     {/*BIO AREA*/}
                     <div className="flex flex-col gap-12 justify-center">
                         
+                        {/* BIO IMAGE */}
+                        <Image
+                        src="/profile.jpg"
+                        alt=""
+                        width={150}
+                        height={150}
+                        className="w-28 h-28 rounded-full object-cover"
+                        />
+
                         {/*BIO TITLE*/}
                         <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            I am <b>Sushil</b>, passionate about crafting intuitive user experiences and dedicated to continuous learning and eager to contribute creative solutions to web development projects.
+                            I am <b>Sushil</b>, passionate about crafting intuitive user experiences and dedicated to continuous learning and eager to contribute creative solutions to web development projects and beyond.
                         </p>
                         
                         {/*BIO QUOTE*/}
@@ -102,6 +112,9 @@ const AboutPage = () => {
                                 Three.js
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
+                                HTML5
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 SCSS
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
@@ -109,6 +122,12 @@ const AboutPage = () => {
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Framer Motion
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
+                                Angular
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
+                                TypeScript
                             </div>
                         </motion.div>
                         
@@ -167,7 +186,7 @@ const AboutPage = () => {
                                     <div className="p-3 text-xs italic">
                                         - Software testing and quality assurance.<br/>
                                         - Analysis of functional and technical requirements.<br/>
-                                        - Development in Java, Angular Framework, TypeScript, HTML5 and CSS.
+                                        - Development in Java, Angular, TypeScript, HTML5 and CSS.
                                     </div>
                                     {/*JOB PERIOD*/}
                                     <div className="p3 text-orange-600 text-xs font-semibold"> 
