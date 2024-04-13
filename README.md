@@ -1,5 +1,5 @@
 # Portfolio
-Personal Portfolio made with Next.js and Framer Motion.
+Personal Portfolio made with Next.js, Framer Motion and Tailwind CSS.
 
 ## Getting Started
 
