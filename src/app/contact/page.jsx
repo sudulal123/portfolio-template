@@ -42,10 +42,11 @@ const ContactPage = () => {
             animate={{y:"0%"}} 
             transition={{duration:1}}
         >
-            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl_px-48">
+            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
                 
                 {/*TEXT AREA*/}
                 <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+                    🧔
                     <div>
                         {text.split("").map((letter, index) => (
                         <motion.span 
@@ -61,30 +62,34 @@ const ContactPage = () => {
                             {letter}
                         </motion.span>
                     ))}
-                    🧔
+                    
                     </div>
                 </div>
                 {/*FORM AREA*/}
                 <form 
                     onSubmit={sendEmail}
                     ref={form}
-                    className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+                    className="h-1/2 lg:h-full lg:w-1/2 bg-gray-300 rounded-xl text-xl flex flex-col gap-8 outline-none justify-center p-24"
                 >
                     <span>Dear Sushil,</span>
                     <textarea 
                         rows={6}  
-                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        required
                         name="user_message"
+                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        placeholder="I went to buy some camo pants but couldn’t find any."
                         />
                     <span>Email address:</span>
                     <input 
+                        type="text"
                         name="user_email"
-                        type="text" 
                         className="bg-transparent border-b-2 border-b-black outline-none"/>
                     <span>Best Regards</span>
-                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+                    <motion.button className="bg-slate-400 rounded font-semibold text-gray-600 p-4"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9}}>
                         Send
-                    </button>
+                    </motion.button>
                         {error && (
                             <span className="text-red-600 font-semibold">
                                 Oops! Something went wrong!

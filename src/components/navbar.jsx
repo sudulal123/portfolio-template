@@ -73,8 +73,8 @@ const Navbar = () => {
         <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl gap-8"> 
             
             {/*NAME*/}
-            <div className="hidden md:flex gap-8 w-1/3 justify-center">
-                <Link href="/" className="border-4 border-color:inherit rounded-full text-sm bg-white p-1 font-bold flex items-center justify-center">
+            <div className="md:hidden lg:flex xl:w-1/3 justify-center">
+                <Link href="/" className="text-sm bg-white rounded-full border-4 border-color:inherit p-1 font-bold flex items-center justify-center">
                     <span className="text-black mr-1">Sushil</span>
                     <span className="w-12 h-8 rounded-full bg-gray-600 text-white flex items-center justify-center">सुशील</span>
                 </Link> 
