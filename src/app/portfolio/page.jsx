@@ -89,8 +89,8 @@ const PortfolioPage = () => {
                     <Link href="/contact">
                         <svg width="167.707" height="167.707">
                             <motion.path  
-                                whileHover={{ scale: 1.2 }}
-                                whileTap={{ scale: 0.5 }}
+                                whileHover={{ scale: 0.5 }}
+                                whileTap={{ scale: 0.2 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
 
                                 fill="222221" 
