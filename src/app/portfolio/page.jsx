@@ -11,7 +11,7 @@ const items = [
         color: "from-slate-400 to-gray-500",
         title: "My Portfolio",
         desc: "Portfolio built with Next.js, Framer Motion and Tailwind CSS",
-        img:   "/my_portfolio.jpg",
+        img:   "/portfolio.jpg",
         link: "https://github.com/sdulal123/portfolio",  
     },
     {
@@ -19,7 +19,7 @@ const items = [
         color: "from-slate-500 to-gray-600",
         title: "TBD Project",
         desc: "Loading....",
-        img: "https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&lazy=load",
+        img: "/under_construction.jpg",
         link: "https://github.com/sdulal123/",  
     },
     {
@@ -27,7 +27,7 @@ const items = [
         color: "from-slate-600 to-gray-700",
         title: "TBD Project",
         desc: "Loading....",
-        img: "https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&lazy=load",
+        img: "/under_construction.jpg",
         link: "https://github.com/sdulal123/",  
     },
     {
@@ -35,7 +35,7 @@ const items = [
         color: "from-slate-700 to-gray-800",
         title: "TBD Project",
         desc: "Loading...",
-        img: "https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&lazy=load",
+        img: "/under_construction.jpg",
         link: "https://github.com/sdulal123/",  
     }
 ]
