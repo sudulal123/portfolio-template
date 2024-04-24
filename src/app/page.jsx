@@ -39,7 +39,7 @@ const Homepage = () => {
           <p className="md:text-xl">
             <TypeAnimation
               sequence={[
-                "My name is Sushil. Welcome to my Portfolio", 20000]}
+                "Welcome to my Portfolio", 20000]}
                 speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
                 deletionSpeed={{ type: 'keyStrokeDelayInMs', value: 100 }}
               />
@@ -52,19 +52,15 @@ const Homepage = () => {
                   className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
                   
                   whileHover={{ 
-                  scale: [1, 0.5, 1, 0.5, 1], 
-                  rotate: [0, 15, 0, -15, 0], 
-                  }}
-                  transition={{
-                    duration: 0.8,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.8, 1],
-                    repeat: 0,
-                  }}
-                  >
-                    Let's dive in
-                  </motion.button>
-                </Link>
+                    scale: [1.1, 1],    
+                }}
+                transition={{
+                    type: "spring", stiffness: 400, damping: 10 
+                }}
+                >
+                  Let's dive in
+                </motion.button>
+              </Link>
           </div>
         </div>
     </div>
