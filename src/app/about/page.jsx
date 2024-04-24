@@ -50,7 +50,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            I am <b>Sushil</b>, passionate about crafting intuitive user experiences and dedicated to continuous learning and eager to contribute creative solutions to web development projects and beyond.
+                            I am <b>Sushil</b>, driven by curiosity and creativity. I'm embarking on my journey as a frontend developer, eager to craft immersive digital experiences. With a foundation in HTML, CSS, and JavaScript, I aspire to merge functionality with aesthetics to build engaging user interfaces.
                         </p>
                         
                         {/*BIO QUOTE*/}
