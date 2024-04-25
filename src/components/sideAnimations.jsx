@@ -19,7 +19,7 @@ const SideAnimations = ({scrollYProgress}) => {
   return (
 	<div className="w-full h-full">
 		{/*Guy with computer*/}
-		<div className="w-full h-1/2">
+		<div className="w-full h-1/2 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
 			<svg width="100%" height="100%">
         		<g className="p-right">
 					<g 
@@ -470,7 +470,7 @@ const SideAnimations = ({scrollYProgress}) => {
 		</div>
 		
         {/*Earth: floating & Moon: Opacity trigger by scroll */}
-		<div className="w-full h-1/2">
+		<div className="w-full h-1/2 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
 			<svg width="100%" height="100%">
 				<g transform="translate(90 15)">
  					<g class="layer">

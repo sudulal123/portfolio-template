@@ -19,7 +19,7 @@ const Homepage = () => {
         <motion.div 
         animate={{ x: -60 }}
         transition={{ ease: "easeOut", duration: 2 }}
-        className="h-1/2 lg:h-full lg:w-1/2 relative">
+        className="h-1/2 lg:h-full lg:w-1/2 relative rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
           <Image src="/guy.png" alt="" fill className="object-contain"/>
         </motion.div>
         
@@ -46,7 +46,7 @@ const Homepage = () => {
             </p>
           
           {/*BUTTONS*/}
-          <div className="flex gap-4 w-full justify-center">
+          <div className="flex gap-4 w-full justify-center rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
               <Link href="/about">
                 <motion.button  
                   className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"

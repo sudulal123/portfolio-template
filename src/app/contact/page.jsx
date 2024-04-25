@@ -45,7 +45,7 @@ const ContactPage = () => {
             <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
                 
                 {/*TEXT AREA*/}
-                <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+                <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                     🧔
                     <div>
                         {text.split("").map((letter, index) => (
@@ -85,7 +85,7 @@ const ContactPage = () => {
                         name="user_email"
                         className="bg-transparent border-b-2 border-b-black outline-none"/>
                     <span>Best Regards</span>
-                    <motion.button className="bg-slate-400 rounded font-semibold text-gray-600 p-4"
+                    <motion.button className="bg-slate-400 font-semibold text-gray-600 p-4 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9}}>
                         Send

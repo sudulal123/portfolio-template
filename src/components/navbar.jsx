@@ -74,21 +74,21 @@ const Navbar = () => {
             
             {/*NAME*/}
             <div className="md:hidden lg:flex xl:w-1/3 justify-center">
-                <Link href="/" className="text-sm bg-white rounded-full border-4 border-color:inherit p-1 font-bold flex items-center justify-center">
+                <Link href="/" className="text-sm bg-white rounded-full border-4 border-color:inherit p-1 font-bold flex items-center justify-center overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                     <span className="text-black mr-1">Sushil</span>
                     <span className="w-12 h-8 rounded-full bg-gray-600 text-white flex items-center justify-center">सुशील</span>
                 </Link> 
             </div>
 
             {/*LINKS*/}
-            <div className="hidden md:flex gap-4 w-1/3">
+            <div className="hidden md:flex gap-4 w-1/3 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                 {links.map((link)=>(
                     <NavLink link={link} key={link.title}/>
                 ))}
             </div>     
               
             {/*SOCIAL MEDIA*/}
-            <div className="hidden lg:flex xl:w-1/3 xl:justify-center gap-8">
+            <div className="hidden lg:flex xl:w-1/3 xl:justify-center gap-8 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                <Link href="https://github.com/sdulal123" target="_blank">
                <Image src="/github.png" alt="" width={24} height={24}/>
                </Link>

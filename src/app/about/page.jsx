@@ -42,7 +42,7 @@ const AboutPage = () => {
                         alt=""
                         width={150}
                         height={150}
-                        className="w-28 h-28 rounded-full object-cover"
+                        className="w-28 h-28 rounded-full object-cover drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                         />
 
                         {/*BIO TITLE*/}
@@ -93,7 +93,7 @@ const AboutPage = () => {
                         {/*SKILLS LIST*/}
                         <motion.div 
                             initial={{x:"-300px"}} 
-                            className="flex gap-4 flex-wrap"
+                            className="flex gap-4 flex-wrap rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                             animate={isSkillRefInView ? {x:0} : {}} 
                         >
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
@@ -175,7 +175,7 @@ const AboutPage = () => {
                                 {/*LEFT*/}
                                 <div className="w-1/3">
                                     {/*JOB TITLE*/}
-                                    <div className="bg-slate-100 p-3 font-semibold text-lg rounded-b-lg rounded-s-lg">
+                                    <div className="bg-slate-100 p-3 font-semibold text-lg rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         Software Developer - Apprenticeship
                                         {/*JOB COMPANY*/}
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
@@ -225,7 +225,7 @@ const AboutPage = () => {
                                 {/*RIGHT*/}
                                 <div className="w-1/3">
                                     {/*DEGREE TITLE*/}
-                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         Global Business and Economics - B.Sc.
                                         {/*UNI NAME*/}
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
@@ -248,7 +248,7 @@ const AboutPage = () => {
                                 {/*LEFT*/}
                                 <div className="w-1/3">
                                     {/*JOB TITLE*/}
-                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         Studienkolleg
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
                                             Fachhochschule Kiel, Kiel
@@ -280,7 +280,7 @@ const AboutPage = () => {
                         </motion.div>
 
                             {/*BUTTONS*/}
-                            <div className="flex gap-4 w-full grid justify-items-end">
+                            <div className="flex gap-4 w-full grid justify-items-end rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                 <Link href="/portfolio">
                                     <motion.button 
                                     className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
