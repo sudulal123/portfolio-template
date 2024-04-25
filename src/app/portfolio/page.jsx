@@ -65,7 +65,7 @@ const PortfolioPage = () => {
                                 <div className="flex flex-col gap-8 text-white">
                                     <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
                                     {/*Image Container*/}
-                                    <div className="relative w-80 h56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                                    <div className="relative w-80 h56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         <Image src={item.img} alt="" fill/>
                                     </div>
                                     {/*Description*/}
