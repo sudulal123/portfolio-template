@@ -17,24 +17,24 @@ const items = [
     {
         id: 2,
         color: "from-slate-500 to-gray-600",
-        title: "TBD Project",
-        desc: "Loading....",
+        title: "Weather App",
+        desc: "App built with Java",
         img: "/under_construction.jpg",
         link: "https://github.com/sdulal123/",  
     },
     {
         id: 3,
         color: "from-slate-600 to-gray-700",
-        title: "TBD Project",
-        desc: "Loading....",
+        title: "Nile",
+        desc: "built with Angular, Node.js, TypeScript",
         img: "/under_construction.jpg",
         link: "https://github.com/sdulal123/",  
     },
     {
         id: 4,
         color: "from-slate-700 to-gray-800",
-        title: "TBD Project",
-        desc: "Loading...",
+        title: "Enigma",
+        desc: "built with Next.JS,..",
         img: "/under_construction.jpg",
         link: "https://github.com/sdulal123/",  
     }
@@ -72,7 +72,7 @@ const PortfolioPage = () => {
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                                     {/*Link with Button*/}
                                     <Link href={item.link} className="flex justify-end" target="_blank">
-                                        < button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">Github</button>
+                                        < button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                                     </Link>
                                 </div>
                             </div>
