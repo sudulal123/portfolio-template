@@ -76,8 +76,8 @@ const ContactPage = () => {
                         rows={6}  
                         required
                         name="user_message"
-                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
-                        placeholder="I went to buy some camo pants but couldn’t find any. 🤣"
+                        className="bg-transparent border-b-2 border-b-black outline-none"
+                        placeholder="I went to buy some camo pants but couldn’t find any 🤣"
                         />
                     <span>Email address:</span>
                     <input 
@@ -85,7 +85,7 @@ const ContactPage = () => {
                         name="user_email"
                         className="bg-transparent border-b-2 border-b-black outline-none"/>
                     <span>Best Regards</span>
-                    <motion.button className="bg-slate-400 font-semibold text-gray-600 p-4 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
+                    <motion.button className="bg-slate-400 font-semibold text-gray-600 p-4 rounded-lg flex-none overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9}}>
                         Send
