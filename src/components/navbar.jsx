@@ -70,7 +70,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl gap-8"> 
+        <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl gap-4"> 
             
             {/*NAME*/}
             <div className="md:hidden lg:flex xl:w-1/3 justify-center">
@@ -81,7 +81,7 @@ const Navbar = () => {
             </div>
 
             {/*LINKS*/}
-            <div className="hidden md:flex gap-4 w-1/3 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+            <div className="hidden md:flex gap-2 xl:w-1/3 xl:justify-center rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                 {links.map((link)=>(
                     <NavLink link={link} key={link.title}/>
                 ))}
