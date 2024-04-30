@@ -50,7 +50,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            I am <b>Sushil</b>, driven by curiosity and creativity. I'm embarking on my journey as a frontend developer, eager to craft immersive digital experiences. With a foundation in HTML, CSS, and JavaScript, I aspire to merge functionality with aesthetics to build engaging user interfaces.
+                            My name is <b>Sushil</b>, I am a frontend software developer. My work involves writing code that creates beautiful and user-oriented designs. My primary goal is to craft digital experiences that spark joy in the hearts of the users. I am especially interested in learning new tools and emerging best practices for frontend as well as backend development on the web and mobile.
                         </p>
                         
                         {/*BIO QUOTE*/}
@@ -93,7 +93,7 @@ const AboutPage = () => {
                         {/*SKILLS LIST*/}
                         <motion.div 
                             initial={{x:"-300px"}} 
-                            className="flex gap-4 flex-wrap rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
+                            className="flex flex-wrap gap-4 rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                             animate={isSkillRefInView ? {x:0} : {}} 
                         >
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
@@ -173,9 +173,9 @@ const AboutPage = () => {
                             <div className="flex justify-between h-48">
                                 
                                 {/*LEFT*/}
-                                <div className="w-1/3">
+                                <div className="w-1/3 flex flex-wrap">
                                     {/*JOB TITLE*/}
-                                    <div className="bg-slate-100 p-3 font-semibold text-lg rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                                    <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         Software Developer - Apprenticeship
                                         {/*JOB COMPANY*/}
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
@@ -196,7 +196,7 @@ const AboutPage = () => {
                                 </div>
                                 
                                 {/*CENTER*/}
-                                <div className="w-1/6 flex justify-center">
+                                <div className="w-1/6 flex flex-wrap justify-center">
                                     {/*LINE*/}
                                     <div className="w-1 h-full bg-gray-600 rounded relative">
                                         {/*CIRCLE*/}
@@ -205,16 +205,16 @@ const AboutPage = () => {
                                 </div>
                                 
                                 {/*RIGHT*/}
-                                <div className="w-1/3"></div>
+                                <div className="w-1/3 flex flex-wrap"></div>
                             </div>
                             {/*TIMELINE LIST ITEM*/}
                             <div className="flex justify-between h-48">
                                 
                                 {/*LEFT*/}
-                                <div className="w-1/3"></div>
+                                <div className="w-1/3 flex flex-wrap"></div>
                                 
                                 {/*CENTER*/}
-                                <div className="w-1/6 flex justify-center">
+                                <div className="w-1/6 flex flex-wrap justify-center">
                                     {/*LINE*/}
                                     <div className="w-1 h-full bg-gray-600 rounded relative">
                                         {/*CIRCLE*/}
@@ -223,7 +223,7 @@ const AboutPage = () => {
                                 </div>
                                 
                                 {/*RIGHT*/}
-                                <div className="w-1/3">
+                                <div className="w-1/3 flex flex-wrap">
                                     {/*DEGREE TITLE*/}
                                     <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         Global Business and Economics - B.Sc.
@@ -243,10 +243,10 @@ const AboutPage = () => {
                                 </div>
                             </div>
                             {/*TIMELINE LIST ITEM*/}
-                            <div className="flex justify-between h-48">
+                            <div className="flex flex-wrap justify-between h-48">
                              
                                 {/*LEFT*/}
-                                <div className="w-1/3">
+                                <div className="w-1/3 flex flex-wrap">
                                     {/*JOB TITLE*/}
                                     <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         Studienkolleg
@@ -266,7 +266,7 @@ const AboutPage = () => {
                                 </div>
                                 
                                 {/*CENTER*/}
-                                <div className="w-1/6 flex justify-center">
+                                <div className="w-1/6 flex flex-wrap justify-center">
                                     {/*LINE*/}
                                     <div className="w-1 h-full bg-gray-600 rounded relative">
                                         {/*CIRCLE*/}
@@ -275,12 +275,12 @@ const AboutPage = () => {
                                 </div>
                                 
                                 {/*RIGHT*/}
-                                <div className="w-1/3"></div>
+                                <div className="w-1/3 flex flex-wrap"></div>
                             </div>
                         </motion.div>
 
                             {/*BUTTONS*/}
-                            <div className="flex gap-4 w-full grid justify-items-end rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                            <div className="flex flex-wrap gap-4 w-full grid justify-items-end rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                 <Link href="/portfolio">
                                     <motion.button 
                                     className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
