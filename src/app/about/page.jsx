@@ -50,7 +50,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            My name is <b>Sushil</b>, I am a frontend software developer. My work involves writing code that creates beautiful and user-oriented designs. My primary goal is to craft digital experiences that spark joy in the hearts of the users. I am especially interested in learning new tools and emerging best practices for frontend as well as backend development on the web and mobile.
+                            My name is <b>Sushil</b>, I am a frontend software developer. My work involves writing code to create beautiful and user-oriented designs, aiming to craft digital experiences that spark joy in the hearts of users. I have a particular interest in learning new tools and staying updated on emerging best practices for both frontend and backend development, applicable to both mobile and web platforms.
                         </p>
                         
                         {/*BIO QUOTE*/}

@@ -9,38 +9,30 @@ const items = [
     {
         id: 1,
         color:  "from-slate-400 to-gray-500",
-        title:  "Portfolio",
-        desc:   "Portfolio built with Next.js, Framer Motion and Tailwind CSS",
-        img:    "/portfolio.jpg",
-        link:   "https://github.com/sdulal123/portfolio",  
-    },
-    {
-        id: 0,
-        color:  "from-slate-500 to-gray-600",
-        title:  "Weather App",
-        desc:   "Weather app GUI built with Java",
-        img:    "/weather_app.jpg",
-        link:   "https://github.com/sdulal123/weather-App",  
-    },
-    {
-        id: 3,
-        color:  "from-slate-600 to-gray-700",
         title:  "Nile",
         desc:   "Ecommerce app",
         img:    "/under_construction.jpg",
-        link:   "https://github.com/sdulal123/",  
+        link:   "https://github.com/sdulal123/portfolio",  
     },
     {
-        id: 4,
-        color:  "from-slate-700 to-gray-800",
+        id: 2,
+        color:  "from-slate-600 to-gray-700",
         title:  "Enigma",
         desc:   "Online Vector Graphics Editor",
         img:    "/under_construction.jpg",
         link:   "https://github.com/sdulal123/",  
+    },
+    {
+        id: 3,
+        color:  "from-slate-600 to-gray-700",
+        title:  "Dash",
+        desc:   "An Admin Dashboard",
+        img:    "/under_construction.jpg",
+        link:   "https://github.com/sdulal123/",
     }
 ]
 
-const PortfolioPage = () => {
+const ProjectsPage = () => {
     const ref = useRef();
     const {scrollYProgress} = useScroll({target:ref});
     const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
@@ -54,7 +46,7 @@ const PortfolioPage = () => {
         >
             <div className="h-[600vh] relative" ref={ref}>
                 <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-                    My Works
+                    My Projects
                 </div>
                 <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
                     <motion.div style={{x}} className="flex">
@@ -99,4 +91,4 @@ const PortfolioPage = () => {
     )
 };
 
-export default PortfolioPage;
+export default ProjectsPage;
