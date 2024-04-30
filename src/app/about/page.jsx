@@ -281,7 +281,7 @@ const AboutPage = () => {
 
                             {/*BUTTONS*/}
                             <div className="flex flex-wrap gap-4 w-full grid justify-items-end rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                                <Link href="/portfolio">
+                                <Link href="/projects">
                                     <motion.button 
                                     className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
                                     
