@@ -63,9 +63,9 @@ const ProjectsPage = () => {
                                     {/*Description*/}
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                                     {/*Link with Button*/}
-                                    <a className="flex justify-end" target="_blank">
-                                        < button href={item.link} className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">See Demo</button>
-                                    </a>
+                                    <Link href={item.link} className="flex justify-end" target="_blank">
+                                        < button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">See Demo</button>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
