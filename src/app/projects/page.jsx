@@ -12,7 +12,7 @@ const items = [
         title:  "Nile",
         desc:   "An online E-commerce",
         img:    "/under_construction.jpg",
-        link:   "https://github.com/sdulal123/portfolio",  
+        link:   "https://nile-rvr.netlify.app/",  
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const items = [
         title:  "Enigma",
         desc:   "An online Graphic tool",
         img:    "/under_construction.jpg",
-        link:   "https://github.com/sdulal123/",  
+        link:   "https://enigma-tool.netlify.app/",  
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const items = [
         title:  "Img-Tuner",
         desc:   "An online Image editor",
         img:    "/under_construction.jpg",
-        link:   "https://github.com/sdulal123/",
+        link:   "https://img-tuner.netlify.app/",
     }
 ]
 
