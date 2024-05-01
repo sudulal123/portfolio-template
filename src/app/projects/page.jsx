@@ -10,7 +10,7 @@ const items = [
         id: 1,
         color:  "from-slate-400 to-gray-500",
         title:  "Nile",
-        desc:   "Ecommerce app",
+        desc:   "An online E-commerce",
         img:    "/under_construction.jpg",
         link:   "https://github.com/sdulal123/portfolio",  
     },
@@ -18,15 +18,15 @@ const items = [
         id: 2,
         color:  "from-slate-600 to-gray-700",
         title:  "Enigma",
-        desc:   "Online Vector Graphics Editor",
+        desc:   "An online Graphic tool",
         img:    "/under_construction.jpg",
         link:   "https://github.com/sdulal123/",  
     },
     {
         id: 3,
         color:  "from-slate-600 to-gray-700",
-        title:  "Dash",
-        desc:   "An Admin Dashboard",
+        title:  "Img-Tuner",
+        desc:   "An online Image editor",
         img:    "/under_construction.jpg",
         link:   "https://github.com/sdulal123/",
     }
@@ -35,7 +35,7 @@ const items = [
 const ProjectsPage = () => {
     const ref = useRef();
     const {scrollYProgress} = useScroll({target:ref});
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
 
     return (
         <motion.div 
