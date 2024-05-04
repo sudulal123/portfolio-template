@@ -25,10 +25,10 @@ const items = [
     {
         id: 3,
         color:  "from-slate-600 to-gray-700",
-        title:  "Img-Tuner",
-        desc:   "An online Image editor",
+        title:  "Bishop-Blitz",
+        desc:   "An online Chess game built with Angular, TypeScript with Stockfish API. It's still work-in-progress, however you can still play online.",
         img:    "/under_construction.jpg",
-        link:   "https://img-tuner.netlify.app/",
+        link:   "https://bishopblitz.netlify.app/",
     }
 ]
 
@@ -57,14 +57,14 @@ const ProjectsPage = () => {
                                 <div className="flex flex-col gap-8 text-white">
                                     <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
                                     {/*Image Container*/}
-                                    <div className="relative w-80 h56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                                    <div className="relative w-80 h56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] rounded-lg overflow-auto drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                                         <Image src={item.img} alt="" fill/>
                                     </div>
                                     {/*Description*/}
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
                                     {/*Link with Button*/}
                                     <Link href={item.link} className="flex justify-end" target="_blank">
-                                        < button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">See Demo</button>
+                                        < button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">Visit website</button>
                                     </Link>
                                 </div>
                             </div>
