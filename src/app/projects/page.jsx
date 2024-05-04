@@ -26,8 +26,8 @@ const items = [
         id: 3,
         color:  "from-slate-600 to-gray-700",
         title:  "Bishop-Blitz",
-        desc:   "An online Chess game built with Angular, TypeScript with Stockfish API. It's still work-in-progress, however you can still play online.",
-        img:    "/under_construction.jpg",
+        desc:   "An online Chess game built with Angular, TypeScript with Stockfish API. It's in work-in-progress stage, however you can still play online.",
+        img:    "/bishop_blitz.jpg",
         link:   "https://bishopblitz.netlify.app/",
     }
 ]
