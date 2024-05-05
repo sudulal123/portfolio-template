@@ -93,7 +93,7 @@
                 <motion.path 
                     id="svg_15" 
                     opacity="0.47" 
-                    enable-background="new" 
+                    enableBackground="new" 
                     animate={{y:[0, 23, 0]}}
                     style={{opacity: svg_15}}
                     transition={{duration:10, repeat: Infinity}}
