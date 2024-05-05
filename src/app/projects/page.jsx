@@ -19,7 +19,7 @@ const items = [
         color:  "from-slate-600 to-gray-700",
         title:  "Nike-clone",
         desc:   "Nike landing page clone, built with React and Tailwind CSS",
-        img:    "/under_construction.jpg",
+        img:    "/nike_clone.jpg",
         link:   "https://sushil-clone-nike-landing-page.netlify.app",  
     },
     {
@@ -27,7 +27,7 @@ const items = [
         color:  "from-slate-400 to-gray-500",
         title:  "Nile",
         desc:   "A single page E-commerce app built with Angular, TypeScript and integrated with Stripe payment",
-        img:    "/under_construction.jpg",
+        img:    "/nile_ecom.jpg",
         link:   "https://nile-rvr.netlify.app/",  
     },
 ]
