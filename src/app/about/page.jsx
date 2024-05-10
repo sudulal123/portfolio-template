@@ -50,7 +50,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            My name is <b>Sushil</b>, I am a frontend software developer. My work involves writing code to create beautiful and user-oriented designs, aiming to craft digital experiences that spark joy in the hearts of users. I have a particular interest in learning new tools and staying updated on emerging best practices for both frontend and backend development, applicable to both mobile and web platforms.
+                            My name is <b>Sushil</b>, frontend developer adept at crafting intuitive user interfaces with a keen eye for design and functionality.   
                         </p>
                         
                         {/*BIO QUOTE*/}
@@ -93,7 +93,7 @@ const AboutPage = () => {
                         {/*SKILLS LIST*/}
                         <motion.div 
                             initial={{x:"-300px"}} 
-                            className="flex flex-wrap gap-4 rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
+                            className="flex flex-wrap gap-6 rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
                             animate={isSkillRefInView ? {x:0} : {}} 
                         >
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
@@ -103,31 +103,22 @@ const AboutPage = () => {
                                 JavaScript
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
-                                React.js
+                                TypeScript
+                            </div>
+                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
+                                React
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Next.js
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
-                                Three.js
-                            </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 HTML5
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
-                                SCSS
+                                CSS
                             </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
                                 Tailwind CSS
-                            </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
-                                Framer Motion
-                            </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
-                                Angular
-                            </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-slate-100 hover:text-black">
-                                TypeScript
                             </div>
                         </motion.div>
                         
@@ -186,7 +177,7 @@ const AboutPage = () => {
                                     <div className="p-3 text-xs italic">
                                         - Software testing and quality assurance.<br/>
                                         - Analysis of functional and technical requirements.<br/>
-                                        - Development in Java, Angular, TypeScript, HTML5 and CSS.
+                                        - Development in Java, JavaScript, TypeScript, HTML5 and CSS.
                                     </div>
                                     {/*JOB PERIOD*/}
                                     <div className="p3 text-orange-600 text-xs font-semibold"> 
@@ -279,23 +270,34 @@ const AboutPage = () => {
                             </div>
                         </motion.div>
 
-                            {/*BUTTONS*/}
-                            <div className="flex flex-wrap gap-4 w-full grid justify-items-end rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                                <Link href="/projects">
-                                    <motion.button 
-                                    className="p-4 rounded-lg ring-1 ring-black bg-gradient-to-b from-slate-400 to-stone-500 text-white"
-                                    
-                                    whileHover={{ 
-                                        scale: [1.1, 1],    
-                                    }}
-                                    transition={{
-                                        type: "spring", stiffness: 400, damping: 10 
-                                    }}
+                             {/*Home Scroll SVG*/}
+                            <Link href="/projects" scroll={false}>
+                            <div className="flex gap-4 w-full justify-center rounded-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+                                <motion.svg
+                                    fill="none"
+                                    width={50}
+                                    height={50}
+                                    strokeWidth="1"
+                                    stroke="#000000"
+                                    viewBox="0 0 24 24"
+                                    initial={{ opacity: 0.2, y: 0 }}
+                                    animate={{ opacity: 1, y: "10px" }}
+                                    transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                                     >
-                                        We're almost there!
-                                    </motion.button>
-                                </Link>
+                                    <path d="M12 6V14"/>
+                                    <path d="M15 11L12 14L9 11"/>
+                                    <path d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"/>
+                                </motion.svg>
+                                <motion.div
+                                    className="content-center"
+                                    initial={{ opacity: 0.2, y: 0 }}
+                                    animate={{ opacity: 1, y: "10px" }}
+                                    transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                                >
+                                    Click for more!
+                                </motion.div>
                             </div>
+                            </Link>
                     </div>
                 </div>
 
