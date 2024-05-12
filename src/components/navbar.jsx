@@ -75,8 +75,8 @@ const Navbar = () => {
             {/*NAME*/}
             <div className="md:hidden lg:flex xl:w-1/3 justify-center">
                 <Link href="/" className="text-sm bg-white rounded-full border-4 border-color:inherit p-1 font-bold flex items-center justify-center overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                    <span className="text-black mr-1">Sushil</span>
-                    <span className="w-12 h-8 rounded-full bg-gray-600 text-white flex items-center justify-center">सुशील</span>
+                    <span className="text-black mr-1">Name</span>
+                    <span className="w-12 h-8 rounded-full bg-gray-600 text-white flex items-center justify-center">Sur</span>
                 </Link> 
             </div>
 
@@ -89,16 +89,16 @@ const Navbar = () => {
               
             {/*SOCIAL MEDIA*/}
             <div className="hidden lg:flex xl:w-1/3 xl:justify-center gap-8 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-               <Link href="https://github.com/sdulal123" target="_blank">
+               <Link href="https://github.com/" target="_blank">
                <Image src="/github.png" alt="" width={24} height={24}/>
                </Link>
-               <Link href="https://linkedin.com/in/sushildulal123/" target="_blank">
+               <Link href="https://linkedin.com/" target="_blank">
                <Image src="/linkedin.png" alt="" width={24} height={24}/>
                </Link>
-               <Link href="https://instagram.com/sdstudio420/" target="_blank">
+               <Link href="https://instagram.com/" target="_blank">
                <Image src="/instagram.png" alt="" width={24} height={24}/>
                </Link> 
-            </div>        
+            </div>
             
             {/*RESPONSIVE MENU*/}
             <div className="md:hidden">           

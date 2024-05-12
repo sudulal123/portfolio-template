@@ -38,7 +38,7 @@ const AboutPage = () => {
                         
                         {/* BIO IMAGE */}
                         <Image
-                        src="/profile.jpg"
+                        src="/profile.png"
                         alt=""
                         width={150}
                         height={150}
@@ -50,7 +50,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            My name is <b>Sushil</b>, frontend developer adept at crafting intuitive user interfaces with a keen eye for design and functionality.   
+                            My name is <b>Your Name</b>, frontend developer adept at crafting intuitive user interfaces with a keen eye for design and functionality.   
                         </p>
                         
                         {/*BIO QUOTE*/}
@@ -167,10 +167,10 @@ const AboutPage = () => {
                                 <div className="w-1/3 flex flex-wrap">
                                     {/*JOB TITLE*/}
                                     <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                                        Software Developer - Apprenticeship
+                                        Software Developer - Blip Blop
                                         {/*JOB COMPANY*/}
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
-                                        4K Analytics GmbH, Leipzig
+                                        Location, Country
                                         </div>
                                     </div>
                                     {/*JOB DESCRIPTION*/}
@@ -217,15 +217,15 @@ const AboutPage = () => {
                                 <div className="w-1/3 flex flex-wrap">
                                     {/*DEGREE TITLE*/}
                                     <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                                        Global Business and Economics - B.Sc.
+                                        Education - B.Sc.
                                         {/*UNI NAME*/}
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
-                                        Fachhochschule Aachen, Aachen
+                                        University, Location
                                         </div>
                                     </div>
                                     {/*JOB DESCRIPTION*/}
                                     <div className="p-3 text-xs italic">
-                                        Specialisation: International Business
+                                        Specialisation: Study Field
                                     </div>
                                     {/*JOB PERIOD*/}
                                     <div className="p3 text-orange-600 text-xs font-semibold"> 
@@ -240,14 +240,14 @@ const AboutPage = () => {
                                 <div className="w-1/3 flex flex-wrap">
                                     {/*JOB TITLE*/}
                                     <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                                        Studienkolleg
+                                        Studies
                                         <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
-                                            Fachhochschule Kiel, Kiel
+                                            University, Location
                                         </div>
                                     </div>
                                     {/*JOB DESCRIPTION*/}
                                     <div className="p-3 text-xs italic">
-                                        Subjects: Maths, Economic, Informatics, English & German
+                                        Subjects: TBD, TBD, TBD
                                     </div>
                                     {/*JOB PERIOD*/}
                                     <div className="p3 text-orange-600 text-xs font-semibold"> 
@@ -294,7 +294,7 @@ const AboutPage = () => {
                                     animate={{ opacity: 1, y: "10px" }}
                                     transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
                                 >
-                                    Click for more!
+                                    Click here!
                                 </motion.div>
                             </div>
                             </Link>
