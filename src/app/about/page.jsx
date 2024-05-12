@@ -50,7 +50,7 @@ const AboutPage = () => {
                         
                         {/*BIO DESCRIPTION*/}
                         <p className="text-lg">
-                            My name is <b>Your Name</b>, frontend developer adept at crafting intuitive user interfaces with a keen eye for design and functionality.   
+                            My name is <b>Your Name</b>, further description.....   
                         </p>
                         
                         {/*BIO QUOTE*/}
