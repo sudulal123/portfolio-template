@@ -1,4 +1,4 @@
-## Portfolio - 2024 (Version 1)
+## Portfolio - 2024 (version 1)
 
 ## Tools
 
