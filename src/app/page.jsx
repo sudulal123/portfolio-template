@@ -37,13 +37,8 @@ const Homepage = () => {
 
           {/*DESCRIPTION*/}
           <p className="md:text-xl animate-pulse">
-            <TypeAnimation
-              sequence={[
-                "Welcome to my Portfolio", 20000]}
-                speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
-                deletionSpeed={{ type: 'keyStrokeDelayInMs', value: 100 }}
-              />
-            </p>
+              Welcome to my Portfolio
+          </p>
           
           {/*Home Scroll SVG*/}
           <Link href="/about" scroll={false}>
@@ -69,7 +64,7 @@ const Homepage = () => {
                 animate={{ opacity: 1, y: "10px" }}
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
               >
-                Click for more!
+                Click here!
               </motion.div>
           </div>
           </Link>
