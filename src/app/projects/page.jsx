@@ -17,6 +17,10 @@ const items = [
     {
         id: 2,
         color:  "from-slate-600 to-gray-700",
+        title:  "TBD Project",
+        desc:   "TBD Description",
+        img:    "/under_construction.jpg",
+        link:   "https://github.com/" 
     },
     {
         id: 3,
