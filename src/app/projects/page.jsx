@@ -17,10 +17,6 @@ const items = [
     {
         id: 2,
         color:  "from-slate-600 to-gray-700",
-        title:  "TBD Project",
-        desc:   "TBD Description",
-        img:    "/under_construction.jpg",
-        link:   "https://github.com/"
     },
     {
         id: 3,
@@ -66,7 +62,7 @@ const ProjectsPage = () => {
                                     <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
                                     {/*Image Container*/}
                                     <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-                                        <Image src={item.img} alt="" fill/>
+                                        <Image priority src={item.img} alt="" fill />
                                     </div>
                                     {/*Description*/}
                                     <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
