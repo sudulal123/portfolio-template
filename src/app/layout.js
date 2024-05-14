@@ -5,7 +5,7 @@ import PageTransition from "@/components/pageTransition";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sushil | Portfolio",
+  title: "Your Name | Portfolio",
   description: "Personal website",
 };
 
@@ -13,10 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PageTransition>
-            {children}
-        </PageTransition>
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
-  )
+  );
 }

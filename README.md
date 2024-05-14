@@ -7,6 +7,7 @@
     - Framer Motion
 
 ## Build Instructions
+
 ```bash
 # Install dependencies (only the first time)
 npm install
