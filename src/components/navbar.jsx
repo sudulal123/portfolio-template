@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import NavLink from "./navLink";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -70,38 +69,25 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl gap-4">
+    <div className="flex p-7 gap-12 justify-between items-center bg-gray-300 border-b-2 border-gray-400">
       {/*NAME*/}
-      <div className="md:hidden lg:flex xl:w-1/3 justify-center">
+      <div className="h-8 md:flex lg:flex xl:w-28 justify-left">
         <Link
           href="/"
-          className="text-sm bg-white rounded-full border-4 border-color:inherit p-1 font-bold flex items-center justify-center overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
+          className="h-8 text-sm bg-gray-400 rounded-full border-4 border-color:inherit p-1 font-bold flex items-center justify-center overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]"
         >
           <span className="text-black mr-1">Name</span>
-          <span className="w-12 h-8 rounded-full bg-gray-600 text-white flex items-center justify-center">
+          <span className="w-12 h-5 rounded-full bg-gray-600 text-white text-xs flex items-center justify-center">
             Sur
           </span>
         </Link>
       </div>
 
       {/*LINKS*/}
-      <div className="hidden md:flex gap-2 xl:w-1/3 xl:justify-center rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+      <div className="hidden lg:flex gap-6 overflow-hidden text-lg font-semibold drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
-      </div>
-
-      {/*SOCIAL MEDIA*/}
-      <div className="hidden lg:flex xl:w-1/3 xl:justify-center gap-8 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
-        <Link href="https://github.com/" target="_blank">
-          <Image src="/github.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="https://linkedin.com/" target="_blank">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="https://instagram.com/" target="_blank">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
       </div>
 
       {/*RESPONSIVE MENU*/}

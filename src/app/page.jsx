@@ -9,8 +9,8 @@ const Homepage = () => {
   return (
     <motion.div
       className="h-full"
-      initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
+      initial={{ y: "-200vh" }}
       transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
@@ -52,6 +52,73 @@ const Homepage = () => {
 
           {/*DESCRIPTION*/}
           <p className="md:text-xl animate-pulse">Welcome to my Portfolio</p>
+
+          {/*GITHUB & LINKEDIN*/}
+          <div className="lg:flex xl:w-1/3 xl:justify-center gap-2 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+            <Link href="https://github.com/" target="_blank">
+              <Image src="/github.png" alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://linkedin.com/" target="_blank">
+              <Image src="/linkedin.png" alt="" width={24} height={24} />
+            </Link>
+          </div>
+
+          {/*SOCIAL MEDIA*/}
+          {/*           <div className="hidden lg:flex xl:w-1/3 xl:justify-center gap-8 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+            <Link href="https://github.com/" target="_blank">
+              <Image src="/github.png" alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://linkedin.com/" target="_blank">
+              <Image src="/linkedin.png" alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://instagram.com/" target="_blank">
+              <Image src="/instagram.png" alt="" width={24} height={24} />
+            </Link>
+          </div> */}
+
+          {/*TECH STACKS*/}
+          <div className="lg:flex xl:w-full xl:justify-center gap-2 rounded-lg overflow-hidden drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+            Tech Stack |
+            <Link
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              <Image src="/html.png" alt="" width={24} height={24} />
+            </Link>
+            <Link
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+            >
+              <Image src="/css.png" alt="" width={24} height={24} />
+            </Link>
+            <Link
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+            >
+              <Image src="/javascript.png" alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://www.typescriptlang.org/docs/" target="_blank">
+              <Image src="/typescript.png" alt="" width={24} height={24} />
+            </Link>
+            <Link
+              href="https://legacy.reactjs.org/docs/getting-started.html"
+              target="_blank"
+            >
+              <Image src="/react.png" alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://nextjs.org/docs" target="_blank">
+              <Image src="/nextJS.png" alt="" width={24} height={24} />
+            </Link>
+            <Link
+              href="https://tailwindcss.com/docs/installation"
+              target="_blank"
+            >
+              <Image src="/tailwindCSS.png" alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://sass-lang.com/documentation/" target="_blank">
+              <Image src="/sass.png" alt="" width={24} height={24} />
+            </Link>
+          </div>
 
           {/*Home Scroll SVG*/}
           <Link href="/about" scroll={false}>

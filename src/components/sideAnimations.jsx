@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion, useTransform } from "framer-motion";
 
 const SideAnimations = ({ scrollYProgress }) => {

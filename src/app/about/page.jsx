@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useRef } from "react";
+import Image from "next/image";
 import SideAnimations from "@/components/sideAnimations";
 import { motion, useInView, useScroll } from "framer-motion";
 
@@ -245,7 +245,7 @@ const AboutPage = () => {
                   {/*STUDIES TITLE*/}
                   <div className="bg-slate-100 p-3 font-semibold rounded-b-lg rounded-s-lg drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
                     Studies
-                  {/*STUDIES LOCATION*/}
+                    {/*STUDIES LOCATION*/}
                     <div className="p-1 rounded text-xs text-amber-500 font-semibold w-fixed">
                       University, Location
                     </div>

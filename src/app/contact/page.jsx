@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
 const ContactPage = () => {
@@ -16,9 +16,12 @@ const ContactPage = () => {
     setError(false);
     setSuccess(false);
 
-    {/*Create EmailJS account where you can get Public and Private ID.
-      then create .env file and save those ID in it.
-    */}
+    {
+      /*Create EmailJS account where you can get Public and Private ID.
+      then create .env file and save those ID in it. 
+      Remember to include .env file in gitignore. We don't want to share those ID 
+    */
+    }
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID,
