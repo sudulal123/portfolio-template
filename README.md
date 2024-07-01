@@ -1,14 +1,37 @@
-## Portfolio - 2024 (version 1)
+<div align="center">
+  <br />
+    <a>
+      <img src="" alt="Project Banner">
+    </a>
+  <br />
+  <h3 align="center"> Portfolio - 2024 (version 1) </h3>
+</div>
 
-## Tools
+## <a name="table">Table of Contents</a>
 
-    - Next.js
-    - Tailwind CSS
-    - Framer Motion
+1. [Introduction](#introduction)
+2. [Tech Stacks](#tech-stacks)
+3. [Quick Start](#quick-start)
 
-## Build Instructions
+
+## <a name="introduction"> Introduction </a>
+
+Portfolio Template you can use and customize it
+
+## <a name="tech-stacks"> Tech Stack </a>
+
+- React
+- Next.js
+- Tailwind CSS
+- Framer Motion
+
+## <a name="quick-start"> Quick Start </a>
 
 ```bash
+# Clone the Repository
+git clone https://github.com/sudulal123/portfolio-template.git
+cd portfolio-template
+
 # Install dependencies (only the first time)
 npm install
 
