@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a>
-      <img src="" alt="Project Banner">
+      <img src="https://github.com/sudulal123/portfolio-template/assets/86375908/1a39b459-f487-48c2-9e0e-23ab3dd41f98" alt="Project Banner">
     </a>
   <br />
   <h3 align="center"> Portfolio - 2024 (version 1) </h3>
